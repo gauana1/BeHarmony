@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import FirebaseStorage
 
 struct Preferences : Codable {
     let ethnicities: [String]?
@@ -113,4 +114,5 @@ final class UserManager{
         ]
         try await userDoc(userId: userId).setData(data, merge: true)
     }   
+    
 }

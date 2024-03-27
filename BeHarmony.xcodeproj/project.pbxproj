@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86058DF02BB4A26500E09F48 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86058DEF2BB4A26500E09F48 /* NavBarView.swift */; };
 		86471CC72BB3A13A00D4B780 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86471CC62BB3A13A00D4B780 /* ImagePicker.swift */; };
 		86471CC92BB3D4B300D4B780 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86471CC82BB3D4B300D4B780 /* FirebaseStorage */; };
 		86DFAD382BAD425800C7C242 /* BeHarmonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD372BAD425800C7C242 /* BeHarmonyApp.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86058DEF2BB4A26500E09F48 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		86471CC62BB3A13A00D4B780 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		86DFAD342BAD425800C7C242 /* BeHarmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeHarmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DFAD372BAD425800C7C242 /* BeHarmonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHarmonyApp.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				86DFAD582BAF894D00C7C242 /* RootView.swift */,
+				86058DEF2BB4A26500E09F48 /* NavBarView.swift */,
 				86DFAD6C2BB0AE6700C7C242 /* Profile */,
 				86DFAD682BB0ADF600C7C242 /* Authentication */,
 				86DFAD652BB0ADA900C7C242 /* Settings */,
@@ -259,6 +262,7 @@
 				86DFAD5B2BAF8ECA00C7C242 /* SettingsView.swift in Sources */,
 				86DFAD542BAF5BF000C7C242 /* SignUpEmail.swift in Sources */,
 				86DFAD3A2BAD425800C7C242 /* ContentView.swift in Sources */,
+				86058DF02BB4A26500E09F48 /* NavBarView.swift in Sources */,
 				86DFAD5F2BB0965D00C7C242 /* ResetPassword.swift in Sources */,
 				86DFAD592BAF894D00C7C242 /* RootView.swift in Sources */,
 				86DFAD672BB0ADBB00C7C242 /* SettingsViewModel.swift in Sources */,
