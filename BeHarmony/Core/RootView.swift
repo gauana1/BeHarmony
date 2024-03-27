@@ -13,7 +13,7 @@ struct RootView: View {
     var body: some View {
         ZStack{
             NavigationStack{
-                SettingsView(isLoggedIn: $isLoggedIn)
+                ProfileView(isLoggedIn: $isLoggedIn)
             }
         }
         .onAppear {

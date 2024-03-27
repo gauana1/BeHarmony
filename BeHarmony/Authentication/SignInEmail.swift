@@ -80,7 +80,8 @@ struct SignInEmail: View {
 struct SignInEmail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            SignInEmail(isLoggedIn: .constant(false))
+//            SignInEmail(isLoggedIn: .constant(false))
+            RootView()
         }
     }
 }

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+@MainActor
+final class SettingsViewModel:ObservableObject{
+    func logout() throws {
+        try AuthManager.shared.logout()
+    }
+}

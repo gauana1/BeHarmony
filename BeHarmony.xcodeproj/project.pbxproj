@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86471CC72BB3A13A00D4B780 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86471CC62BB3A13A00D4B780 /* ImagePicker.swift */; };
+		86471CC92BB3D4B300D4B780 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86471CC82BB3D4B300D4B780 /* FirebaseStorage */; };
 		86DFAD382BAD425800C7C242 /* BeHarmonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD372BAD425800C7C242 /* BeHarmonyApp.swift */; };
 		86DFAD3A2BAD425800C7C242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD392BAD425800C7C242 /* ContentView.swift */; };
 		86DFAD3C2BAD425900C7C242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DFAD3B2BAD425900C7C242 /* Assets.xcassets */; };
@@ -22,9 +24,15 @@
 		86DFAD5B2BAF8ECA00C7C242 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD5A2BAF8ECA00C7C242 /* SettingsView.swift */; };
 		86DFAD5D2BAFA05100C7C242 /* SignInEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD5C2BAFA05100C7C242 /* SignInEmail.swift */; };
 		86DFAD5F2BB0965D00C7C242 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD5E2BB0965D00C7C242 /* ResetPassword.swift */; };
+		86DFAD612BB0A75000C7C242 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 86DFAD602BB0A75000C7C242 /* FirebaseFirestore */; };
+		86DFAD632BB0A75000C7C242 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86DFAD622BB0A75000C7C242 /* FirebaseFirestoreSwift */; };
+		86DFAD672BB0ADBB00C7C242 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD662BB0ADBB00C7C242 /* SettingsViewModel.swift */; };
+		86DFAD6E2BB0AE7500C7C242 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD6D2BB0AE7500C7C242 /* ProfileView.swift */; };
+		86DFAD722BB0B38400C7C242 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFAD712BB0B38400C7C242 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86471CC62BB3A13A00D4B780 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		86DFAD342BAD425800C7C242 /* BeHarmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeHarmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DFAD372BAD425800C7C242 /* BeHarmonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHarmonyApp.swift; sourceTree = "<group>"; };
 		86DFAD392BAD425800C7C242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +47,9 @@
 		86DFAD5A2BAF8ECA00C7C242 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		86DFAD5C2BAFA05100C7C242 /* SignInEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmail.swift; sourceTree = "<group>"; };
 		86DFAD5E2BB0965D00C7C242 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		86DFAD662BB0ADBB00C7C242 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		86DFAD6D2BB0AE7500C7C242 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		86DFAD712BB0B38400C7C242 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +57,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DFAD632BB0A75000C7C242 /* FirebaseFirestoreSwift in Frameworks */,
 				86DFAD4C2BAE78B000C7C242 /* FirebaseAnalyticsSwift in Frameworks */,
+				86DFAD612BB0A75000C7C242 /* FirebaseFirestore in Frameworks */,
 				86DFAD4F2BAE8C8200C7C242 /* FirebaseAuth in Frameworks */,
 				86DFAD4A2BAE78B000C7C242 /* FirebaseAnalytics in Frameworks */,
+				86471CC92BB3D4B300D4B780 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				86DFAD372BAD425800C7C242 /* BeHarmonyApp.swift */,
-				86DFAD502BAEA2DA00C7C242 /* Authentication */,
 				86DFAD392BAD425800C7C242 /* ContentView.swift */,
+				86DFAD642BB0A7B000C7C242 /* Core */,
+				86DFAD502BAEA2DA00C7C242 /* Authentication */,
+				86DFAD702BB0B35B00C7C242 /* FireStore */,
 				86DFAD462BAE744400C7C242 /* GoogleService-Info.plist */,
 				86DFAD3B2BAD425900C7C242 /* Assets.xcassets */,
 				86DFAD402BAD425900C7C242 /* BeHarmony.entitlements */,
@@ -104,15 +120,57 @@
 		86DFAD502BAEA2DA00C7C242 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				86DFAD582BAF894D00C7C242 /* RootView.swift */,
-				86DFAD5A2BAF8ECA00C7C242 /* SettingsView.swift */,
-				86DFAD512BAEA30200C7C242 /* LoginPage.swift */,
-				86DFAD552BAF7EF200C7C242 /* AuthManager.swift */,
 				86DFAD532BAF5BF000C7C242 /* SignUpEmail.swift */,
 				86DFAD5C2BAFA05100C7C242 /* SignInEmail.swift */,
 				86DFAD5E2BB0965D00C7C242 /* ResetPassword.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		86DFAD642BB0A7B000C7C242 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				86DFAD582BAF894D00C7C242 /* RootView.swift */,
+				86DFAD6C2BB0AE6700C7C242 /* Profile */,
+				86DFAD682BB0ADF600C7C242 /* Authentication */,
+				86DFAD652BB0ADA900C7C242 /* Settings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		86DFAD652BB0ADA900C7C242 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				86DFAD662BB0ADBB00C7C242 /* SettingsViewModel.swift */,
+				86DFAD5A2BAF8ECA00C7C242 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		86DFAD682BB0ADF600C7C242 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				86DFAD552BAF7EF200C7C242 /* AuthManager.swift */,
+				86DFAD512BAEA30200C7C242 /* LoginPage.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		86DFAD6C2BB0AE6700C7C242 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				86DFAD6D2BB0AE7500C7C242 /* ProfileView.swift */,
+				86471CC62BB3A13A00D4B780 /* ImagePicker.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		86DFAD702BB0B35B00C7C242 /* FireStore */ = {
+			isa = PBXGroup;
+			children = (
+				86DFAD712BB0B38400C7C242 /* UserManager.swift */,
+			);
+			path = FireStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +193,9 @@
 				86DFAD492BAE78B000C7C242 /* FirebaseAnalytics */,
 				86DFAD4B2BAE78B000C7C242 /* FirebaseAnalyticsSwift */,
 				86DFAD4E2BAE8C8200C7C242 /* FirebaseAuth */,
+				86DFAD602BB0A75000C7C242 /* FirebaseFirestore */,
+				86DFAD622BB0A75000C7C242 /* FirebaseFirestoreSwift */,
+				86471CC82BB3D4B300D4B780 /* FirebaseStorage */,
 			);
 			productName = BeHarmony;
 			productReference = 86DFAD342BAD425800C7C242 /* BeHarmony.app */;
@@ -194,14 +255,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86471CC72BB3A13A00D4B780 /* ImagePicker.swift in Sources */,
 				86DFAD5B2BAF8ECA00C7C242 /* SettingsView.swift in Sources */,
 				86DFAD542BAF5BF000C7C242 /* SignUpEmail.swift in Sources */,
 				86DFAD3A2BAD425800C7C242 /* ContentView.swift in Sources */,
 				86DFAD5F2BB0965D00C7C242 /* ResetPassword.swift in Sources */,
 				86DFAD592BAF894D00C7C242 /* RootView.swift in Sources */,
+				86DFAD672BB0ADBB00C7C242 /* SettingsViewModel.swift in Sources */,
+				86DFAD722BB0B38400C7C242 /* UserManager.swift in Sources */,
 				86DFAD5D2BAFA05100C7C242 /* SignInEmail.swift in Sources */,
 				86DFAD522BAEA30200C7C242 /* LoginPage.swift in Sources */,
 				86DFAD382BAD425800C7C242 /* BeHarmonyApp.swift in Sources */,
+				86DFAD6E2BB0AE7500C7C242 /* ProfileView.swift in Sources */,
 				86DFAD562BAF7EF200C7C242 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +487,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		86471CC82BB3D4B300D4B780 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86DFAD482BAE78B000C7C242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		86DFAD492BAE78B000C7C242 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 86DFAD482BAE78B000C7C242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -436,6 +506,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 86DFAD482BAE78B000C7C242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		86DFAD602BB0A75000C7C242 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86DFAD482BAE78B000C7C242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		86DFAD622BB0A75000C7C242 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86DFAD482BAE78B000C7C242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

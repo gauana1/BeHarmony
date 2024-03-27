@@ -35,9 +35,21 @@ final class AuthManager { //checks user on local storage so not async
         return try UserModel(user:user)
     }
     
-    func createUser(email: String, password: String) async throws -> UserModel {
+    func createUser(email: String, password: String) async throws -> DBUser {
         let result = try await Auth.auth().createUser(withEmail: email, password: password)
-        return try UserModel(user: result.user)
+        
+        // Create a UserModel instance from result.user
+        let userModel = try UserModel(user: result.user)
+        
+        // Create a DBUser instance using userModel
+        let dbUser = DBUser(user:userModel)
+        
+        // Perform any additional operations you need with the newly created user
+        
+        // Assuming UserManager.shared.createUser accepts DBUser
+        try await UserManager.shared.createUser(user: dbUser)
+        
+        return dbUser
     }
     func login(email: String, password: String) async throws -> UserModel {
         let result = try await Auth.auth().signIn(withEmail: email, password: password)
@@ -52,3 +64,4 @@ final class AuthManager { //checks user on local storage so not async
     }
     
 }
+    
